@@ -1,0 +1,27 @@
+{
+  "name": "mcp-apache-superset",
+  "version": "1.0.0",
+  "description": "MCP server for Apache Superset",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-apache-superset": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": ["mcp", "superset", "apache"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
